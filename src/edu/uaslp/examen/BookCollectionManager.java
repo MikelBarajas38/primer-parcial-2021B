@@ -24,7 +24,7 @@ public class BookCollectionManager {
 
         while(iterator.hasNext()) {
             BookCollection data = iterator.next();
-            if(data.getName() == name) {
+            if(data.getName().equals(name)) {
                 return data;
             }
         }
