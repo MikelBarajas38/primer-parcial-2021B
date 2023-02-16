@@ -35,15 +35,18 @@ public class Book {
         return stars;
     }
 
-    public void setStars(short stars) {
+    public void setStars(int stars) {
 
-        if(stars > 5){
+        short sStars = (short) stars;
+
+        if(sStars > 5){
             stars = 5;
         }
 
-        if(stars < 0){
+        if(sStars < 0){
             stars = 0;
         }
-        this.stars = stars;
+
+        this.stars = sStars;
     }
 }
